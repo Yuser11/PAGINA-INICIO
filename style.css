@@ -22,6 +22,8 @@
   /* #BC8F7D */
   --tertiary-rgb: 150, 176, 136;
   /* #96B088 */
+  --quatenary-rgb: 255, 50, 50;
+
 
   --bg: rgb(var(--bg-rgb));
   --bg-alt: rgb(var(--bg-alt-rgb));
@@ -30,6 +32,8 @@
   --primary: rgb(var(--primary-rgb));
   --secondary: rgb(var(--secondary-rgb));
   --tertiary: rgb(var(--tertiary-rgb));
+  --quatenary: rgb(var(--quatenary-rgb));
+
 }
 
 /* Base styles */
@@ -37,7 +41,7 @@ body {
   /*
   background-color: var(--bg-alt);
   */
-  background-image: url(background.jpg);
+  background-image: url(wpp.jpg);
   background-size: cover;
   color: var(--fg);
   font-family: sans-serif;
@@ -100,6 +104,10 @@ main {
   color: var(--tertiary);
 }
 
+.senai-container h2 {
+  color: var(--quatenary);
+}
+
 /* Links */
 .container a {
   width: 100%;
@@ -158,12 +166,17 @@ main {
 .clock {
   text-align: center;
   margin-top: 4em;
+  font-family: Nabla;
+  filter: grayscale(100);
+  
 }
 
 .clock-time {
   font-size: 5rem;
   font-weight: 500;
   letter-spacing: 4px;
+  filter: drop-shadow(0 1 1 rem crimson);
+
 }
 
 .clock-date {
@@ -281,4 +294,18 @@ main {
     width: 90%;
   }
 }
+a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  width: 20px;
+  filter: invert();
+  margin-right: 10px;
+}
 
+@font-face {
+  font-family: 'Nabla';
+  src: url(Nabla/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
+}
