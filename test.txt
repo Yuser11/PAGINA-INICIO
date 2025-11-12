@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myDIV
+{
+  padding: 16px;
+  width:400px;
+  transition:200ms;
+  
+}
+.myStyle 
+{
+  transform: translate(100px, 0);
+  transition:200ms;
+}
+#botao
+{
+  width:100%;
+  background-color: blue;
+}
+.menu
+{
+  width:200px;
+  height:500px;
+  background-color: blue;
+  padding: 16px;
+  width:200px;
+}
+
+</style>
+
+<body>
+<h1>The DOMToken Object</h1>
+<h2>The toggle() Method</h2>
+
+
+<p>Click "Toggle" to toggle "myStyle" on and off.</p>
+
+<div id="myDIV">
+<span class="menu">ffffffffffffffffffffffffffffff</span>
+<span id="botao" onclick="myFunction()">Toggle</span>
+<p>I am myDIV.</p>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDIV").classList.toggle("myStyle");
+}
+</script>
+
+</body>
+</html>
