@@ -54,6 +54,42 @@ body {
   line-height: 1.5;
 }
 
+.menu {
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  position: fixed;
+  width: 300px;
+  height: 50vh;
+  background-color: azure;
+}
+
+.seta {
+  position: fixed;
+  right: 310px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 0, 0);
+}
+
+.seta:hover menu {
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  position: fixed;
+  width: 300px;
+  height: 50vh;
+  background-color: azure;
+}
+
+.seta:hover {
+  position: fixed;
+  right: 310px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 0, 0);
+}
+
 
 .linha {
   display: flex;
@@ -328,7 +364,7 @@ img {
   margin-right: 10px;
 }
 
-.senai-container a:hover img {
+.container a:hover img {
   filter: none;
 }
 
