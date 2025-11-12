@@ -5,9 +5,12 @@
   box-sizing: border-box;
   transition: 0.2s ease-in-out;
 }
-html { 
-  scrollbar-width: none; 
-} /* Firefox */
+
+html {
+  scrollbar-width: none;
+}
+
+/* Firefox */
 
 /* Variables */
 :root {
@@ -50,15 +53,15 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
 }
-  
+
 
 .linha {
   display: flex;
-  flex-direction: row;    
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   min-width: 75%;
-  width: 75%; 
+  width: 75%;
 }
 
 main {
@@ -76,7 +79,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 25%;
+  min-width: 300px;
   padding: 2em 1em;
   border-radius: 1em;
   background-color: var(--bg);
@@ -171,18 +175,21 @@ main {
 .general-container a:hover {
   color: var(--tertiary);
 }
+
 .senai-container a:hover {
   color: var(--quaternary);
 }
-.senai-container a:hover img{
-filter: invert(filter(cons));}
+
+.senai-container a:hover img {
+  filter: invert(filter(cons));
+}
 
 /* Clock */
 .clock {
   text-align: center;
   margin-top: 4em;
   font-family: Rampart;
-  filter: grayscale(100);  
+  filter: grayscale(100);
 }
 
 .clock-time {
@@ -308,17 +315,20 @@ filter: invert(filter(cons));}
     width: 90%;
   }
 }
-a{
+
+a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-img{
+
+img {
   width: 20px;
   filter: brightness(0) saturate(100%) invert();
   margin-right: 10px;
 }
-.senai-container a:hover img{
+
+.senai-container a:hover img {
   filter: none;
 }
 
@@ -326,8 +336,10 @@ img{
   font-family: 'Nabla';
   src: url(Nabla/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
 }
+
 @font-face {
   font-family: 'Rampart';
   src: url(Rampart/RampartOne-Regular.ttf);
 }
+
 @import url('');
